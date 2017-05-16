@@ -9,6 +9,17 @@
   </head>
 
   <body>
+  <% if current_user %>
+    <a href="/logout">logout</a>
+  <% else %>
+    <a href="/login">login</a>
+    <a href="/signup">signup</a>
+  <% end %>
+
+
+
+
+  <%= session[:user_id] %>
     <%= yield %>
   </body>
 </html>

@@ -1,4 +1,5 @@
 # make 100 fake people
+# Contact.destroy_all
 contact1 = 0
 100.times do
   p 'in the loop'

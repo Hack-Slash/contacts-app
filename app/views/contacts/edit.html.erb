@@ -1,0 +1,8 @@
+I will show a form
+<%= form_tag "/contacts/#{@contact.id}", method: :patch do %>
+  <p>First Name<input type="text" name="first_name" value="<%= @contact.first_name %>"></p
+  <p>Last Name<input type="text" name="last_name" value="<%= @contact.last_name %>"></p>
+  <p>Email<input type="text" name="email" value="<%= @contact.email %>"></p>
+  <p>Phone Number<input type="text" name="phone_number" value="<%= @contact.phone_number %>"></p>
+  <input type="submit" value="Update a new contact">
+<% end %>

@@ -1,5 +1,8 @@
 <p>I will show all the contacts</p>
 
+<% Group.all.each do |group| %>
+  <a href="/contacts?group=<%= group.id %>"><%= group.name %></a>
+<% end %>
 <% @contacts.each do |contact| %>
   <h2>here is your contact</h2>
   <p><%= contact.first_name %></p>
